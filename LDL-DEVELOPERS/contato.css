@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #290544, #f509d6);
+}
+
+.container {
+    padding: 2rem;
+    /* Adiciona espaçamento interno */
+}
+
+.contact-back {
+    background: linear-gradient(to bottom, #290544, #f509d6);
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    padding: 2rem;
+}
+
+#contact-form {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    margin: 1rem auto;
+    width: 70%;
+    max-width: 400px;
+    /* Limitando a largura máxima */
+}
+
+.form-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #ff00ff;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    padding: 0.75rem;
+    /* Aumentando o preenchimento */
+    border: 2px solid #ff0080;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
+    /* Ajustando a transição */
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff0080;
+    transform: scale(1.05);
+    border-color: #d605b0;
+    /* Destaque na mudança de foco */
+}
+
+.form-control::placeholder {
+    color: #ff0080;
+}
+
+.btn {
+    background: #ff0080;
+    color: white;
+    border: 2px solid #ff0080;
+    padding: 0.75rem 1.25rem;
+    /* Aumentando o preenchimento */
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    margin: 1rem auto;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #ff0080;
+}
+
+.google-maps-container {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.google-maps-embed {
+    height: 300px;
+    margin-top: 1.25rem;
+}
+
+.contato,
+.academicos {
+    position: fixed;
+    top: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: #fff;
+    z-index: 1000;
+    animation: pulse 1s infinite alternate;
+    transition: z-index 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.academicos {
+    left: 1500px;
+    /* Ajustando o espaçamento */
+    font-size: 16px;
+}
+
+.contato {
+    margin-left: 1300px;
+    font-size: 16px;
+}
+
+.contato:hover,
+.academicos:hover {
+    z-index: 1100;
+    background-color: #d605b0;
+    /* Mudança sutil na cor */
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 1800px) {
+    .contato, .academicos {
+        position: static; /* Altera a posição para o padrão */
+        display: block;
+        margin: 10px auto;
+        left: auto;
+        margin-left: 0;
+    }
+}
